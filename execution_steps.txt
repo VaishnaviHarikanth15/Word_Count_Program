@@ -1,0 +1,28 @@
+For java platform normal execution procedure
+Steps to execute the program on hadoop platform:
+Executed in Eclipse for creation of JAR file 
+1.Create Project ->add new class-> Encrypt /Decrypt (same as name of the class)
+2. write the program
+3.Import required hadoop packages (part of system libraries)
+ in configure build path-> add external jar files
+- add hadoop core jar files from hadoop directory-> hadoop-core-jar
+
+
+
+EXPORT project ->java->JAR file 
+save as jar file
+
+Create Sample Text file for word count execution 
+
+In Terminal 
+1.start-all.sh   (Start all the daemons)
+2.add the text file in hadoop file system-> hadoop fs -put filename.txt
+3.To Run the program
+ - hadoop jar java_jar_filename.jar  Encrypt/Decrypt /filename.txt /Output
+
+here Encrypt/Decrypt is the class name and Output is the file in which results are seen 
+
+Results : In Console 
+or 
+http://Localhost:50075 
+in file system
